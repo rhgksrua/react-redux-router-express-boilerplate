@@ -14,9 +14,9 @@ module.exports = {
     target: 'node',
     entry: './server/server.js',
     output: {
-        path: './build/',
-        publicPath: 'build/',
-        filename: 'server.js',
+        path: './server/',
+        publicPath: 'server/',
+        filename: 'serverBundle.js',
     },
     externals: nodeModules,
     module: {
@@ -26,7 +26,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015', 'react']
+                    presets: ['es2015']
                 }
             },
         ]

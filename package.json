@@ -4,6 +4,9 @@
   "description": "Boilerplate for react redux router express",
   "main": "index.js",
   "scripts": {
+    "dev:client": "webpack --watch --config webpack.client.config.js",
+    "dev:server": "webpack --watch --config webpack.server.config.js",
+    "dev:watch": "nodemon server/serverBundle.js & npm run dev:client & npm run dev:server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
