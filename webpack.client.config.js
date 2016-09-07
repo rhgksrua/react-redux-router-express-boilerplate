@@ -5,7 +5,7 @@ var path = require('path');
 
 module.exports = {
   name: 'client',
-  entry: './client/index.jsx',
+  entry: './client/components/index.jsx',
   output: {
     path: './build/',
     publicPath: 'build/',

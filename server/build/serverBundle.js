@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "build/";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__dirname) {'use strict';
+	'use strict';
 
 	var _express = __webpack_require__(1);
 
@@ -60,21 +60,20 @@
 
 	// pug templates
 	app.set('view engine', 'pug');
-	app.set('views', 'views');
+	app.set('views', './server/views');
 
-	app.use(_express2.default.static(_path2.default.resolve(__dirname + '/build')));
+	app.use(_express2.default.static('build'));
 
 	var port = 3000 || process.env.PORT;
 
 	app.get('/', function (req, res) {
+	  console.log('hello world');
 	  return res.render('index');
-	  //return res.send('hello world');
 	});
 
 	app.listen(port, function () {
 	  console.log('localhost://' + port);
 	});
-	/* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ },
 /* 1 */

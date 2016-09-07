@@ -1,9 +1,11 @@
+'use strict';
+
 import React, { Component } from 'react';
 
 class App extends Component {
   render() {
     return (
-      <div>React</div>
+      <div>React Redux React-Router Boilerplate</div>
     );
   }
 }

@@ -8,15 +8,14 @@ const app = express();
 // pug templates
 app.set('view engine', 'pug');
 app.set('views', './server/views');
-//console.log(path.jo(`${__dirname}/build`));
 
 app.use(express.static('build'));
 
 const port = 3000 || process.env.PORT;
 
 app.get('/', (req, res) => {
+  console.log('hello world');
   return res.render('index');
-  //return res.send('hello world');
 });
 
 app.listen(port, () => {

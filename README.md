@@ -8,4 +8,6 @@
 
 ## Features
 
-Server and client code are in ES2015.
+Server side files are ouputed to `server/build/serverBundle.js`.
+
+`nodemon` only watches `server/build/` directory.
