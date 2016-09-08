@@ -67,7 +67,6 @@
 	var port = 3000 || process.env.PORT;
 
 	app.get('/', function (req, res) {
-	  console.log('hello world');
 	  return res.render('index');
 	});
 

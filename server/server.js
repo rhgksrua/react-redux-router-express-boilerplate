@@ -14,7 +14,6 @@ app.use(express.static('build'));
 const port = 3000 || process.env.PORT;
 
 app.get('/', (req, res) => {
-  console.log('hello world');
   return res.render('index');
 });
 
