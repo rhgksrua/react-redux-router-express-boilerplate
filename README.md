@@ -17,3 +17,7 @@ Client side files are built to `build/`.
 All `react-router` routes are available in `client/components/Routes.jsx`.  Refer to [`react-router`](https://github.com/reactjs/react-router) for more information.
 
 `nodemon` only watches `server/build/` directory.
+
+## TODO
+
+* Hot reload
